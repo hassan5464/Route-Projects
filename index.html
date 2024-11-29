@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+  <title>Quotes App</title>
+</head>
+<style>
+  *{
+    text-align: center;
+  }
+h1{
+  font-weight: 900;
+  font-size: 80px;
+  margin: 50px auto;
+  font-family: "Roboto", sans-serif;
+}
+p{
+  font-size: 40px;
+}
+button{
+  padding: 40px 90px;
+  cursor: pointer;
+  background-color: blue;
+  transition: 0.4s ease-in-out;
+  color: #Fff;
+}
+button:hover{
+  background-color: green;
+}
+div p{
+  font-size: 50px;
+  color: #000;
+}
+
+
+</style>
+<body>
+  <h1 >Quote of the Day</h1>
+  <p>Press the button below to recieve a random quote!New Quote</p>
+  <button onclick="getRandomQuote()">New Quote</button>
+  <div class="holderQuote">
+    <p id="quote"></p>
+    <p id="author"></p>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>  
